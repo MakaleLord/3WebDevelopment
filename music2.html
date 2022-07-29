@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Music band</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania|Roboto+Condensed" rel="stylesheet">
+  </head>
+  <body>
+
+      <h1>Music Band</h1>
+
+    <audio src='sounds/kick.mp3' preload id='kick-audio'></audio>
+    <audio src='sounds/crash.mp3' preload id='crash-audio'></audio>
+     <audio src='sounds/tom.mp3' preload id='tom-audio'></audio>
+    <audio src='sounds/hihat.mp3' preload id='hihat-audio'></audio> 
+    <audio src='sounds/snare.mp3' preload id='snare-audio'></audio>
+     <audio src='sounds/tomleft.mp3' preload id='tomleft-audio'></audio>
+    <audio src='sounds/tomright.mp3' preload id='tomright-audio'></audio>
+   
+    <audio src="file.mp3" controls></audio>
+    
+      <img class='drumset-part' id='kick' src='images/kick.png' onclick="play('kick-audio');">
+      <img class='drumset-part' id='crash' src='images/crash.png' onclick="play('crash-audio');">
+      <img class='drumset-part' id='tom' src='images/tom.png' onclick="play('tom-audio');">
+      <img class='drumset-part' id='hihat' src='images/hihat.png' onclick="play('hihat-audio');">
+      <img class='drumset-part' id='snare' src='images/snare.png' onclick="play('snare-audio');">
+      <img class='drumset-part' id='tomleft' src='images/tomleft.png' onclick="play('tomleft-audio');">
+      <img class='drumset-part' id='tomright' src='images/tomright.png' onclick="play('tomright-audio');">
+
+    <script>
+      
+      
+      function play(audioId){
+        var audio = document.getElementById(audioId);
+        audio.currentTime = 0;
+        audio.play(); 
+      }
+      
+      
+      
+    </script>
+  </body>
+</html><script type="application/javascript" src="/share.js"></script>
